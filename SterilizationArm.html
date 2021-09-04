@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Richa Rani</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <script src="https://kit.fontawesome.com/b68049ebb8.js" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logoRR.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class= "logo">
+                <img src="logoRR.png" alt="" class="logo">
+
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link"> Home </a></li>
+                    <li class="nav__item"><a href="index.html#About Me" class="nav__link"> About Me </a></li>
+                    <li class="nav__item"><a href="index.html#Skills" class="nav__link"> My Skills </a></li>
+                    <li class="nav__item"><a href="index.html#My Work" class="nav__link"> My Work </a></li>
+                    <li class="nav__item"><a href="index.html#Expirience" class="nav__link"> Experience </a></li>
+                    <li class="nav__item"><a href="resume.html" class="nav__link"> Resume </a></li>
+                    <li class="nav__item"><a href="index.html#Contact Me" class="nav__link"> Contact Me </a></li>
+                </ul>
+            </nav>
+        </header>
+
+<!-- Introduction -->
+    <section class="intro" id="Home">
+        <h1 class="section__title section__title--intro">
+            Sterile Tool <strong>Transporter </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> a  System  for  Sterilizing  Surgical  Tools using  Remote Sensing and Actuation</p>
+        <img src="Sterilization.png" alt="" class="intro__img"> 
+    </section>
+    <!-- Add page content here -->
+
+    <div class="portfolio-item-individual">
+        <p>The motivation behind programming an arm to transport the container to the sterilization autoclave was
+            to reduce human effort and the sterilization would not be compromised if an arm can carry the container. The
+            computation sub team was responsible for transferring a randomly spawned container and to the appropriate
+            autoclave using muscle sensors. This project was coded with python on a raspberry pi</p>
+        <img src="Arm.png" alt="" class="intro--img">
+        <p>There are three distinct functions that correspond to three distinct muscle
+            positions. When both arms are up, the arm moves. When only the right arm is up, the gripper opens or closes.
+            When only the left arm is up the autoclave opens. The workflow is that it will start in home position, it will
+            spawn a container, then it will move to the pickup location, then it will close the gripper, then it will move the
+            arm to the autoclave bin, then it releases the container into the appropriate spot, if it is a large bin then the
+            autoclave bin will open, then the gripper will release, and then it will return back to the home position.</p>
+        <img src="Muscle.png" alt="" class="intro--img">
+
+        
+    </div>
+
+    <script src="js/index.js"></script>
+    </body>
+</html>
