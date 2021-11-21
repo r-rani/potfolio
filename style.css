@@ -110,7 +110,7 @@ h3{ font-size: var(--fs-h3)}
 
 .section__title--intro strong{
     display: block;
-    color:#3BBA9C;
+    color:white;
 }
 .section__subtitle{
     margin: 0;
@@ -243,20 +243,18 @@ header{
 .hamburger::after{bottom:6px;}
 
 /* Intro Section */
-.intro{
-    position: relative;
+ .top{
+    background-image: url(mountain.jpg);
+    background-size: cover;
 }
 
-.intro__img{
-    box-shadow: var(--bs);
-}
 .section__subtitle--intro{
     display: inline-block;
 }
 
 @media (min-width: 600px){
     .intro{
-        display: grid;
+        /* display: grid; */
         width: min-content;
         margin:0 auto;
         grid-column-gap: 1em;
